@@ -6,6 +6,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/alumnos', function () {
+    return view('welcome');
+});
+Route::get('/tareas', function () {
+    return view('welcome');
+});
 
 Route::get('/alumnos', [
     App\Http\Controllers\AlumnosController::class, "listar"
